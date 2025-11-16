@@ -35,5 +35,16 @@ Furthermore, I certify that this assignment was prepared by me specifically for 
  * NULL on file or memory error.
  */
 struct DNARecord *load_database(const char *filename, int *record_count){
-    
+    FILE *fp;
+    char s[1024];
+    int linecount = 0;
+
+    fp = fopen(filename, "r");
+
+    while(fgets(s, sizeof s, fp) != NULL){
+        linecount++;
+        strcpy(my_record.id, "ID_from_file");
+    }
+    printf("%d\n", linecount);
+    fclose(fp);
 }

@@ -17,6 +17,23 @@ Furthermore, I certify that this assignment was prepared by me specifically for 
 */      
 
 #include "a5.h"
+#include<stdlib.h>
 
 #define MAX_DNA_LENGTH 5096
 
+/**
+ * @brief Loads a DNA database from a CSV file into a dynamic array.
+ *
+ * Opens the file, counts records, allocates an array of struct DNARecord,
+ * and populates it. The caller is responsible for freeing the
+ * returned array.
+ *
+ * @param[in]  filename     Path to the CSV database file.
+ * @param[out] record_count Pointer to an int to store the total record count.
+ *
+ * @return Pointer to the allocated DNARecord array on success, 
+ * NULL on file or memory error.
+ */
+struct DNARecord *load_database(const char *filename, int *record_count){
+    
+}

@@ -18,7 +18,7 @@ Furthermore, I certify that this assignment was prepared by me specifically for 
 
 #include "a5.h"
 
-#define MAX_LINE_LENGTH 6000 // Sufficient buffer for ID, Class, and 5096 sequence
+#define MAX_LINE_LENGTH 5096 
 
 /*
  * Function: load_database
